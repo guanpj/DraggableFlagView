@@ -1,0 +1,106 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From AndroidBucket:
+* .gitignore
+* .gradle\
+* .gradle\4.10.1\
+* .gradle\4.10.1\fileChanges\
+* .gradle\4.10.1\fileChanges\last-build.bin
+* .gradle\4.10.1\fileHashes\
+* .gradle\4.10.1\fileHashes\fileHashes.bin
+* .gradle\4.10.1\fileHashes\fileHashes.lock
+* .gradle\4.10.1\gc.properties
+* .gradle\vcs-1\
+* .gradle\vcs-1\gc.properties
+* .idea\
+* .idea\codeStyles\
+* .idea\codeStyles\Project.xml
+* .idea\gradle.xml
+* .idea\inspectionProfiles\
+* .idea\inspectionProfiles\Project_Default.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\runConfigurations.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* AndroidBucket.iml
+* README.md
+* ant.properties
+* build.gradle
+* build.xml
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* proguard-project.txt
+From DraggableFlagView:
+* .gitignore
+* DraggableFlagView.iml
+* LICENSE
+* README.md
+* ant.properties
+* build.xml
+* proguard-project.txt
+* screenshot\
+* screenshot\draggableflagview.gif
+* screenshot\draggableflagview_a.png
+* screenshot\draggableflagview_b.png
+* screenshot\draggableflagview_c.png
+* screenshot\draggableflagview_d.png
+* screenshot\draggableflagview_e.png
+* screenshot\draggableflagview_f.png
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In AndroidBucket:
+* AndroidManifest.xml => androidBucket\src\main\AndroidManifest.xml
+* assets\ => androidBucket\src\main\assets
+* libs\android-support-v7-recyclerview.jar => androidBucket\libs\android-support-v7-recyclerview.jar
+* res\ => androidBucket\src\main\res\
+* src\ => androidBucket\src\main\java\
+In DraggableFlagView:
+* AndroidManifest.xml => draggableFlagView\src\main\AndroidManifest.xml
+* assets\ => draggableFlagView\src\main\assets
+* libs\library-2.4.0.jar => draggableFlagView\libs\library-2.4.0.jar
+* res\ => draggableFlagView\src\main\res\
+* src\ => draggableFlagView\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
